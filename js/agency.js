@@ -1,31 +1,44 @@
 // Agency Theme JavaScript
 
-// jQuery to collapse the navbar on scroll
-function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+(function($) {
+    "use strict"; // Start of use strict
+
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
     }
-}
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-});
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-    $('.navbar-toggle:visible').click();
-  }
-});
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    })
+
+})(jQuery); // End of use strict
