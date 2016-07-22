@@ -22,7 +22,7 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 
 // Less task to compile the less files and add the banner
 gulp.task('less', function() {
-    return gulp.src('less/agency.less')
+    return gulp.src('less/grayscale.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -33,7 +33,7 @@ gulp.task('less', function() {
 
 // Minify CSS
 gulp.task('minify-css', function() {
-    return gulp.src('css/agency.css')
+    return gulp.src('css/grayscale.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -44,7 +44,7 @@ gulp.task('minify-css', function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
+    return gulp.src('js/grayscale.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -79,7 +79,7 @@ gulp.task('fontawesome', function() {
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
-// Copy all third party dependencies from node_modules to vendor directory
+// Copy all dependencies from node_modules
 gulp.task('copy', ['bootstrap', 'jquery', 'fontawesome']);
 
 // Configure the browserSync task
