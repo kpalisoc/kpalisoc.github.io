@@ -141,6 +141,15 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+
+#profile-pic {
+  display: block;
+  width:300px;
+  height:auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 768px) {
   .text-right-desk {
     text-align: right;
@@ -156,9 +165,10 @@ a:focus {
     font-size: 18px;
 
   }
-  .profile-pic {
-    width:300px; /* you can use % */
+  #profile-pic {
+    width: 300px; /* you can use % */
     height: auto;
+
   }
 }
 .intro-text {
@@ -284,7 +294,7 @@ a:focus {
     padding: 10px 60px;
     font-size: 18px; //change this to your desired size
     line-height: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 ul.banner-social-buttons {
   margin-top: 0;
