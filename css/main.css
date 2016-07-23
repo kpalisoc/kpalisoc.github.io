@@ -145,9 +145,12 @@ a:focus {
 #profile-pic {
   display: block;
   width:300px;
-  height:auto;
+  height:300px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  border: 5px solid rgba(255,255,255,0.5);
 }
 
 span.line {
@@ -157,6 +160,9 @@ span.line {
 @media (min-width: 768px) {
   .text-right-desk {
     text-align: right;
+    }
+  .text-left-desk {
+    text-align: left;
     }
   .intro {
     height: 100%;
@@ -173,7 +179,11 @@ span.line {
   }
   #profile-pic {
     width: 300px; /* you can use % */
-    height: auto;
+    height: 300px;
+    float:right;
+  }
+  .col-sm-4 {
+    width: 47%;
   }
 }
 .intro-text {
