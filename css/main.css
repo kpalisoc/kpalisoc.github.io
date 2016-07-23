@@ -136,10 +136,10 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 24px;
+  font-size: 36px;
 }
 .intro .intro-body .intro-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #profile-pic {
@@ -149,6 +149,10 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
 }
+
+span.line {
+  display: block;
+  }
 
 @media (min-width: 768px) {
   .text-right-desk {
@@ -163,12 +167,13 @@ a:focus {
   }
   .intro .intro-body .intro-text {
     font-size: 18px;
-
+  }
+  span.line {
+  display: inline;
   }
   #profile-pic {
     width: 300px; /* you can use % */
     height: auto;
-
   }
 }
 .intro-text {
