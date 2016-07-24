@@ -39,7 +39,7 @@ p {
   }
 }
 a {
-  color: white;
+  color: black;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -54,7 +54,7 @@ a:focus {
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(80,240,240, 0.7);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
@@ -83,7 +83,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(80,240,240, 1);
   outline: none;
   background-color: transparent;
 }
@@ -96,10 +96,11 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(80,240,240,1);
 }
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: rgba(80,240,240,0.7);
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -113,8 +114,8 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgba(80,240,240, 0.7);
   }
 }
 .intro {
@@ -124,7 +125,7 @@ a:focus {
   padding: 100px 0;
   /*text-align: center;*/
   color: white;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)), url(../img/gears-tq.jpg) no-repeat bottom center scroll;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url(../img/gears-tq.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -153,12 +154,11 @@ a:focus {
   border: 5px solid rgba(255,255,255,0.5);
 }
 
-#logo {
-  display: inline;
-  width: 200px;
-  height: auto;
+.logo {
   float: left;
-  float:top;
+  height: 45px;
+  width: auto;
+  margin: 2.5px 15px;
 }
 
 span.line {
@@ -193,6 +193,25 @@ span.line {
   .col-sm-4 {
     width: 47%;
   }
+  .logo {
+        height: 80px;
+        width: auto;
+        margin: 2.5px 15px;
+         -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+        transition: all 0.3s;
+
+  }
+}
+
+.navbar-shrink {
+    height: 45px;
+    width: auto;
+    margin: 2.5px 15px;
+     -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 }
 .intro-text {
   font-weight: 300;
