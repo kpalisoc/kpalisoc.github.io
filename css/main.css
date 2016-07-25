@@ -168,6 +168,12 @@ span.line {
   display: block;
   }
 
+.about-pic {
+  height:125px;
+  width: auto
+  background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
 @media (min-width: 768px) {
   .text-right-desk {
     text-align: right;
@@ -193,8 +199,13 @@ span.line {
     height: auto;
     float:right;
   }
-  .col-sm-4 {
+  .col-sm-4-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 47%;
+    float:left;
   }
   .logo {
         height: 80px;
@@ -216,7 +227,7 @@ span.line {
     transition: all 0.3s;
 }
 }
-.intro-text {
+p.intro-text {
   font-weight: 300;
 }
 @-webkit-keyframes pulse {
@@ -266,9 +277,17 @@ span.line {
   height: 200px;
   margin-top: 100px;
 }
+p.thin {
+  font-weight: 300;
+}
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px;
+  }
+  .about-section {
+    height: 600px;
+    width: auto;
+    background-color: black;
   }
   .download-section {
     padding: 100px 0;
@@ -347,4 +366,7 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+img.darken {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
