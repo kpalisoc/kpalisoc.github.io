@@ -207,6 +207,27 @@ span.line {
     width: 47%;
     float:left;
   }
+  .col-sm-offset-1-2 {
+    margin-left: 12.5%;
+  }
+  .col-sm-4-shiftleft {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 28.3333333%;
+    margin-right: 5%;
+    float:left;
+  }
+  .col-sm-4-shiftright {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 28.3333333%;
+    margin-left: 5%;
+    float:left;
+  }
   .logo {
         height: 80px;
         width: auto;
@@ -279,6 +300,27 @@ p.intro-text {
 }
 p.thin {
   font-weight: 300;
+}
+div.thin {
+  font-weight:300;
+}
+.about-header {
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.about-text {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.courses {
+  font-size:12px;
+  position:relative;
+  width:50%;
+  float:left;
+}
+ul {
+  
 }
 @media (min-width: 767px) {
   .content-section {
