@@ -174,6 +174,22 @@ span.line {
   background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
 
+.hobby-pic {
+  height:100px;
+  width: auto
+  background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+#magic {
+  height:100px;
+  width:100px;
+  margin: auto;
+  background-image: url(../img/about/magic-pic.jpg);
+  background-size: 100px;
+}
+#magic:hover {
+  background-image: url(../img/about/magic.gif);
+}
+
 @media (min-width: 768px) {
   .text-right-desk {
     text-align: right;
@@ -281,13 +297,14 @@ p.intro-text {
 }
 .content-section {
   padding-top: 100px;
+  margin-bottom: 100px;
 }
 .portfolio-section {
   width: 100%;
   padding: 50px 0;
-  background: linear-gradient(rgba(50,50,50,1),black);
-  background-color: black;
-  height:1200px;
+  /*background: linear-gradient(rgba(50,50,50,1),black);*/
+  background-color: rgba(40,40,40,1);
+  height:auto;
   width:auto;
 }
 #map {
@@ -296,15 +313,17 @@ p.intro-text {
   margin-top: 100px;
 }
 p.thin {
-  font-weight: 300;
+  font-weight: 200;
 }
 div.thin {
-  font-weight:300;
+  font-weight:200;
 }
 .about-header {
   margin-top: 30px;
   font-size: 14px;
+  font-weight: 300;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 .about-text {
   margin-top: 30px;
@@ -325,15 +344,16 @@ ul {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 100px;
+    margin-bottom: 100px;
   }
   .about-section {
-    height: 600px;
+    height: 800px;
     width: auto;
     background-color: black;
   }
   .portfolio-section {
-    padding: 100px 0;
+    padding: 75px 0;
   }
   #map {
     height: 400px;
@@ -368,7 +388,10 @@ ul {
     margin-bottom: 30px;
 }
 ul.banner-social-buttons {
-  margin-top: 0;
+  margin-top: 30px;
+  padding-left: 0;
+  margin-left: -25px;
+  list-style: none;
 }
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
@@ -380,6 +403,7 @@ ul.banner-social-buttons {
     display: block;
     margin-bottom: 20px;
     padding: 0;
+    margin-right:40px;
   }
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
@@ -415,17 +439,17 @@ img.darken {
 }
 
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
+  margin: 15px 15px 30px;
   right: 0;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(80,250,250, 0.7);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -457,14 +481,15 @@ img.darken {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgba(255,255,255,1);
   text-align: center;
   padding: 25px;
   color: black;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin: 2.5px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -482,6 +507,7 @@ img.darken {
 }
 .portfolio-modal .modal-content {
   border-radius: 0;
+  background-color: rgba(30,30,30,1);
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -501,6 +527,7 @@ img.darken {
   margin: 20px 0 30px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
+  color: rgba(255,255,255,0.7);
   font-size: 16px;
 }
 .portfolio-modal .modal-content ul.list-inline {
@@ -526,7 +553,7 @@ img.darken {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: white;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -537,7 +564,7 @@ img.darken {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #222222;
+  background-color: white;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
