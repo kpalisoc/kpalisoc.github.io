@@ -335,7 +335,7 @@ p.intro-text {
 }
 .content-section {
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 .portfolio-section {
   width: 100%;
@@ -382,20 +382,14 @@ ul {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 100px;
-    margin-bottom: 100px;
   }
   .about-section {
-    height: 800px;
+    height: auto;
     width: auto;
     background-color: black;
   }
   .portfolio-section {
     padding: 75px 0;
-  }
-  #map {
-    height: 400px;
-    margin-top: 250px;
   }
 }
 .btn {
@@ -426,7 +420,7 @@ ul {
     margin-bottom: 30px;
 }
 ul.banner-social-buttons {
-  margin-top:-40px;
+  padding: 25px;
 }
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
@@ -601,7 +595,7 @@ img.darken {
   display: none;
 }
 .contact-section {
-  height:100px;
+  height:auto;
   background-color: black;
 }
 .fa-xlg {
