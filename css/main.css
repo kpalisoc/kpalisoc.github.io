@@ -175,22 +175,60 @@ span.line {
 }
 
 .hobby-pic {
-  height:100px;
+  height:80px;
   width: auto
   background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
 #magic {
-  height:100px;
-  width:100px;
+  height:80px;
+  width:80px;
   margin: auto;
   background-image: url(../img/about/magic-pic.jpg);
-  background-size: 100px;
+  background-size: 80px;
 }
 #magic:hover {
   background-image: url(../img/about/magic.gif);
 }
+#gaming {
+  margin-left: -12px;
+}
+#nihon:after {
+  content:"日本";
+  font-size: 36px;
+  line-height: 80px;
+  font-weight: 700;
+}
+#nihon:hover:after {
+  content:"nihon";
+  font-size:28px;
+}
+/*#japanese:after {
+  content:"japanese";
+}
+#japanese:hover:after {
+  content:"日本語";
+}*/
 
 @media (min-width: 768px) {
+  .hobby-pic {
+    height:100px;
+    width: auto
+    background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  }
+  #magic {
+    height:100px;
+    width:100px;
+    margin: auto;
+    background-image: url(../img/about/magic-pic.jpg);
+    background-size: 100px;
+  }
+  #nihon:after {
+  font-size: 52px;
+  line-height: 100px;
+  }
+  #nihon:hover:after {
+    font-size:36px;
+  }
   .text-right-desk {
     text-align: right;
     }
