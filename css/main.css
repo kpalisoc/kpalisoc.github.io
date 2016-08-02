@@ -388,32 +388,18 @@ ul {
     margin-bottom: 30px;
 }
 ul.banner-social-buttons {
-  margin-top: 30px;
-  padding-left: 0;
-  margin-left: -25px;
-  list-style: none;
+  margin-top:-40px;
 }
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
-    margin-top: 15px;
+
   }
 }
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-    margin-right:40px;
+@media (min-width: 767px) {
+  ul.banner-social-buttons {
   }
   ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
   }
-}
-footer {
-  padding: 50px 0;
-}
-footer p {
-  margin: 0;
 }
 ::-moz-selection {
   text-shadow: none;
@@ -481,7 +467,7 @@ img.darken {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
   padding: 25px;
   color: black;
@@ -575,4 +561,15 @@ img.darken {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.contact-section {
+  height:100px;
+  background-color: black;
+}
+.fa-xlg {
+  font-size: 2.5em;
+  line-height: 1em;
+  vertical-align: middle;
+  width: 1em;
+  text-align: center;
 }
