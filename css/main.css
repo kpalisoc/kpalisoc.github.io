@@ -380,6 +380,7 @@ div.thin {
 ul {
   list-style-type: square;
 }
+
 #hometown {
   margin-top: 50px;
   margin-bottom:-50px;
@@ -627,6 +628,9 @@ img.darken {
 }
 .modal-text {
   font-size: 16px;
+}
+.modal-video {
+  margin-bottom:25px;
 }
 @media (max-width: 767px) {
   h2.modal-name {
