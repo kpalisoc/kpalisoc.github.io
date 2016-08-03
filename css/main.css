@@ -380,6 +380,14 @@ div.thin {
 ul {
   list-style-type: square;
 }
+#hometown {
+  margin-top: 50px;
+  margin-bottom:-50px;
+  color: rgba(255,255,255,0.9);
+}
+.about-section {
+    margin-top: -75px;
+}
 @media (min-width: 767px) {
   .content-section {
   }
@@ -387,6 +395,7 @@ ul {
     height: auto;
     width: auto;
     background-color: black;
+    margin-top: -75px;
   }
   .portfolio-section {
     padding: 75px 0;
@@ -408,6 +417,18 @@ ul {
 }
 .btn-default:hover,
 .btn-default:focus {
+  border: 2px solid rgba(80,250,250,1);
+  outline: none;
+  color: rgba(0,0,0,1);
+  background-color: rgba(80,250,250,0.8);
+}
+.btn-primary {
+  border: 2px solid rgba(80,250,250,1);
+  color: rgba(80,250,250,1);
+  background-color: rgba(0,0,0,0.4);
+}
+.btn-primary:hover,
+.btn-primary:focus {
   border: 2px solid rgba(80,250,250,1);
   outline: none;
   color: rgba(0,0,0,1);
@@ -553,7 +574,6 @@ img.darken {
   margin-top: 0;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 30px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
@@ -604,4 +624,29 @@ img.darken {
   vertical-align: middle;
   width: 1em;
   text-align: center;
+}
+.modal-text {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  h2.modal-name {
+    font-size:30px !important;
+  }
+}
+.slide-image {
+    width: 100%;
+    height:auto;
+}
+.carousel-holder {
+    width:100%;
+    height:auto;
+    margin-bottom:50px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+.carousel-inner {
+  background-color: rgba(30,30,30,1) !important;
 }
