@@ -445,6 +445,7 @@ ul {
     font-size: 18px; //change this to your desired size
     line-height: normal;
     margin-bottom: 30px;
+    border-radius:2px;
 }
 ul.banner-social-buttons {
   padding: 25px;
