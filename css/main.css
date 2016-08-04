@@ -189,6 +189,9 @@ span.line {
 #magic:hover {
   background-image: url(../img/about/magic.gif);
 }
+#magic:active {
+  background-image: url(../img/about/magic.gif);
+}
 #gaming {
   margin-left: -12px;
 }
@@ -202,6 +205,7 @@ span.line {
   content:"nihon";
   font-size:28px;
 }
+
 /*#japanese:after {
   content:"japanese";
 }
@@ -252,6 +256,7 @@ span.line {
     width: 280px; /* you can use % */
     height: auto;
     float:right;
+    margin-right: 10px;
   }
   .col-sm-4-5 {
     position: relative;
