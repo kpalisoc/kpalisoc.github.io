@@ -186,6 +186,7 @@ span.line {
   margin: auto;
   background-image: url(../img/about/magic-pic.jpg);
   background-size: 80px;
+  border-radius: 3px;
 }
 #magic:hover {
   background-image: url(../img/about/magic.gif);
