@@ -443,6 +443,23 @@ ul {
     margin-bottom: 30px;
     border-radius:2px;
 }
+
+
+.btn-default-yellow {
+  border: 2px solid rgba(220,220,0,1);
+  color: rgba(255,255,0,1);
+  background-color: rgba(10,10,10,0.4);
+}
+.btn-default-yellow:hover,
+.btn-default-yellow:focus {
+  border: 2px solid rgba(250,250,0,1);
+  outline: none;
+  color: rgba(0,0,0,1);
+  background-color: rgba(250,250,0,1);
+}
+
+
+
 ul.banner-social-buttons {
   padding: 25px;
 }
@@ -520,6 +537,44 @@ img.darken {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
+
+
+
+
+
+#portfolio .portfolio-hover-yellow {
+  background: rgba(255,255,0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-hover-yellow:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: black;
+}
+ #portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow {
+  margin-top: -12px;
+}
+#portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow {
+  margin: 0;
+}
+
+
+
+
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
