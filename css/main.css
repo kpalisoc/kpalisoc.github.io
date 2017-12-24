@@ -447,7 +447,7 @@ ul {
 
 .btn-default-yellow {
   border: 2px solid rgba(220,220,0,1);
-  color: rgba(255,255,0,1);
+  color: rgba(220,220,0,1);
   background-color: rgba(10,10,10,0.4);
 }
 .btn-default-yellow:hover,
@@ -455,7 +455,7 @@ ul {
   border: 2px solid rgba(250,250,0,1);
   outline: none;
   color: rgba(0,0,0,1);
-  background-color: rgba(250,250,0,1);
+  background-color: rgba(250,250,0,0.8);
 }
 
 
@@ -568,7 +568,8 @@ img.darken {
  #portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow {
   margin-top: -12px;
 }
-#portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow {
+#portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow h3,
+#portfolio .portfolio-hover-yellow .portfolio-hover-content-yellow h4 {
   margin: 0;
 }
 
